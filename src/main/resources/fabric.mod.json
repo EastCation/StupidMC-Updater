@@ -1,0 +1,53 @@
+{
+	"schemaVersion": 1,
+	"id": "stupidmc-updater",
+	"version": "${version}",
+	"name": "StupidMC Updater",
+	"description": "沙雕翻译包自动更新程序，使您能够跟上最新的翻译！",
+	"authors": [
+		"Starmoe",
+		"萌雨社"
+	],
+	"contributors": [
+		"NuanR_Mxi",
+		"SkyDynamic"
+	],
+	"contact": {
+		"homepage": "https://main.moerain.cn/",
+		"sources": "https://github.com/EastCation/StupidMC-Updater",
+		"issues": "foo"
+	},
+	"license": "GNU GPLv3",
+	"icon": "assets/stupidmc-updater/pack-mod.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"moe.updater.StupidMCUpdater"
+		],
+		"client": [
+			"moe.updater.StupidMCUpdaterClient"
+		]
+	},
+	"mixins": [
+		"stupidmc-updater.mixins.json",
+		{
+			"config": "stupidmc-updater.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*",
+		"modmenu": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu:api": [
+			"moe.updater.stupidmc-updater.StupidMCUpdaterModMenu"
+		]
+	}
+}
