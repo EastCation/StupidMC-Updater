@@ -19,6 +19,6 @@ public class StupidMCUpdater implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("欢迎使用沙雕翻译包附加模组！\n本模组还在开发中，可能会有很多奇奇怪怪的问题，请见谅 \n或者帮助我们一同完成！");
+			LOGGER.info("欢迎使用沙雕翻译包附加模组！\n本模组还在开发中，可能会有很多奇奇怪怪的问题，请见谅 \n或者帮助我们一同完成！");
 	}
 }
